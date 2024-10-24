@@ -12,6 +12,7 @@ JAVA = java
 CLIENT_APP = workshopday09.App
 MAP_COMPARISON_APP = workshopday09.MapComparison
 MAP_THREADSAFE_APP = workshopday09.ThreadsafeMap
+MASTERMIND_APP = workshopday09.Mastermind
 
 all: ${OUT_DIR} compile
 
@@ -36,6 +37,9 @@ run-map-jar: jar
 
 run-mapthreadsafe-jar: jar
 	${JAVA} -cp ${WORKSHOP_JAR} ${MAP_THREADSAFE_APP}
+
+run-mastermind-jar: jar
+	${JAVA} -cp ${WORKSHOP_JAR} ${MASTERMIND_APP}
 
 clean:
 	@rm -rf ${OUT_DIR}
